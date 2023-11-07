@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#captcha {
+    border: 2px solid #606060;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#captcha a {
+    aspect-ratio: 1;
+    height: 30px;
+    border: 2px solid #606060;
+    background: transparent;
+    border-radius: 5px;
+}
+
+#captcha p {
+    margin-left: 20px;
+    margin-right: 75px;
+}
+
+#captcha img {
+    height: 50px;
+}
