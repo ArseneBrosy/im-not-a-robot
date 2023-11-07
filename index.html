@@ -10,9 +10,20 @@
     <h1>Welcome to the game</h1>
     <p>By Arsène Brosy</p>
     <div id="captcha">
-        <a href="images.html"></a>
+        <button onclick="openCaptcha()"><i class="fa fa-circle-o-notch fa-spin" style="display: none"></i></button>
         <p>I'm not a robot</p>
         <img src="./img/logo.png" alt="logo">
     </div>
+
+    <script>
+        function openCaptcha() {
+          document.querySelector("#captcha button i").style.display = "block";
+          document.querySelector("#captcha button").style.border = "none";
+
+          setTimeout(() => {
+            window.location.href = "images.html";
+          }, 1000);
+        }
+    </script>
 </body>
 </html>
